@@ -14,8 +14,9 @@ function generateReports(students) {
         // Get student name
         studentsObj.name = person.name; // O(1) - Accessing property
 
+        // Find average score
+        const personScores = person.scores; // O(1) - Constant time to assign reference
         
-
     });
 
     
