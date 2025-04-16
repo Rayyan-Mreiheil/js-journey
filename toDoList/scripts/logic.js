@@ -1,6 +1,6 @@
 
 
-// function to read the input value, add it as a new <li> element to the list and then clear the input
+
 function AddToList(){
 
     const task = document.getElementById("task-input").value;
@@ -15,3 +15,6 @@ function AddToList(){
     document.getElementById("task-input").value = ""
 
 }
+
+const addBtn = document.getElementById("add-btn");
+addBtn.addEventListener("click",AddToList)
