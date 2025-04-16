@@ -16,6 +16,10 @@ function generateReports(students) {
 
         // Find average score
         const personScores = person.scores; // O(1) - Constant time to assign reference
+        let sum = 0;
+        personScores.forEach(score => {
+            sum += score // O(m) - Loop over each score (m = number of scores per student)
+        })
         
     });
 
