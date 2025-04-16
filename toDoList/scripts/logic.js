@@ -18,3 +18,14 @@ function AddToList(){
 
 const addBtn = document.getElementById("add-btn");
 addBtn.addEventListener("click",AddToList)
+
+// Function to remove li tag when an <li> is clicked
+document.getElementById("task-list").addEventListener("click", function(e){
+    e.target.remove();
+})
+
+
+// Function to mark li tag as Done when an <li> is clicked
+// document.getElementById("task-list").addEventListener("click", function(e){
+//     e.target.textContent += " ===>Done!";
+// })
