@@ -5,5 +5,12 @@ class BankAccount {
         this.history = []; // O(1) – empty array initialization
     }
 
+    deposit(amount){
+        this.initialBalance += amount; // O(1)
+        // push deposite amount to history array
+        this.history.push(`Deposited $${amount}`); // O(1) – push to array
+    }
+
     
+
 }
