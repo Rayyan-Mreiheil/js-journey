@@ -24,6 +24,19 @@ function generateReports(students) {
         const avg = sum / personScores.length; // O(1) - Arithmetic calculation
         studentsObj.average = avg; // O(1)
 
+        //  Find grade
+        if (avg >= 90){
+            studentsObj.grade = "A"; // O(1)
+        } else if (avg >= 80){
+            studentsObj.grade = "B"; // O(1)
+        } else if (avg >= 70){
+            studentsObj.grade = "C"; // O(1)
+        }else if (avg >= 60){
+            studentsObj.grade = "D"; // O(1)
+        }else {
+            studentsObj.grade = "F"; // O(1)
+        }
+        
         
 
     });
