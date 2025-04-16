@@ -33,6 +33,9 @@ class BankAccount {
         // OR: return `${this.ownerName}'s balance is $${this.initialBalance}`;
     }
 
-    
+    printHistory(){
+        return this.history; // O(1) – returns a reference to the array
+        // Note: if we iterate over this elsewhere, that iteration is O(h) where h = number of history entries
+    }
 
 }
