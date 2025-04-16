@@ -11,6 +11,11 @@ class BankAccount {
         this.history.push(`Deposited $${amount}`); // O(1) – push to array
     }
 
-    
+    withdraw(amount){
+        this.initialBalance -= amount;  // O(1)
+        // push withdraw amount to history array
+        this.history.push(`Withdrew $${amount}`);  // O(1)
+    }
 
+    
 }
