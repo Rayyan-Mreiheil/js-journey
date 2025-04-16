@@ -11,6 +11,9 @@ function generateReports(students) {
             grade: ""
         }; // O(1) - Constant time object creation
 
+        // Get student name
+        studentsObj.name = person.name; // O(1) - Accessing property
+
         
 
     });
