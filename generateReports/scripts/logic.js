@@ -41,6 +41,6 @@ function generateReports(students) {
 
     });
 
-    
+    return studentsArray; // O(1)
 
 }
