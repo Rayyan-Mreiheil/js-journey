@@ -8,6 +8,8 @@ function AddToList(){
     const createLI = document.createElement("LI");
     const addTask = document.createTextNode(task);
 
+    createLI.appendChild(addTask);
+
     
 
 }
