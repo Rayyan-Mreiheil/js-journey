@@ -28,6 +28,11 @@ class BankAccount {
         }
     }
 
+    getSummary(){
+        return this.ownerName + "'s balance is $" + this.initialBalance; // O(1) – simple string + number
+        // OR: return `${this.ownerName}'s balance is $${this.initialBalance}`;
+    }
+
     
 
 }
