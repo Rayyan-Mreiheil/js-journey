@@ -37,7 +37,7 @@ function generateReports(students) {
             studentsObj.grade = "F"; // O(1)
         }
         
-        
+        studentsArray.push(studentsObj); // O(1) - Inserting at end of array
 
     });
 
