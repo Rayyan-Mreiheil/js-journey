@@ -1,4 +1,12 @@
 
+/*
+Time Complexity: O(n * m)
+  - n = number of students
+  - m = average number of scores per student
+  - For each student, we loop over all their scores.
+  - Nested (O(n) outer + O(m) inner) O(n * m)
+*/
+
 function generateReports(students) {
 
     const studentsArray = []; // O(1) - Constant time to initialize the array
