@@ -1,3 +1,11 @@
+
+/*
+Time Complexity (All Methods): O(1)
+- All methods in this class are O(1) – they do not depend on input size
+- All operations are constant-time: arithmetic, string creation, array push, property access.
+- No loops or recursive calls.
+*/
+
 class BankAccount {
     constructor(ownerName, initialBalance){
         this.ownerName = ownerName;  // O(1)
