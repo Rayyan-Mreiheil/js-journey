@@ -20,7 +20,12 @@ function generateReports(students) {
         personScores.forEach(score => {
             sum += score // O(m) - Loop over each score (m = number of scores per student)
         })
+        // Calculate average
+        const avg = sum / personScores.length; // O(1) - Arithmetic calculation
+        studentsObj.average = avg; // O(1)
+
         
+
     });
 
     
