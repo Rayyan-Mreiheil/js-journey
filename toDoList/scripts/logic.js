@@ -5,6 +5,9 @@ function AddToList(){
 
     const task = document.getElementById("task-input").value;
     
+    const createLI = document.createElement("LI");
+    const addTask = document.createTextNode(task);
+
     
 
 }
