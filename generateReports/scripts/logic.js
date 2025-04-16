@@ -44,3 +44,13 @@ function generateReports(students) {
     return studentsArray; // O(1)
 
 }
+
+
+// Sample Input For Testing
+const students = [
+    { name: "Alice", scores: [90, 85, 92] },
+    { name: "Bob", scores: [70, 68, 72] },
+    { name: "Charlie", scores: [100, 100, 100] }
+  ];
+
+  console.log(generateReports(students));
