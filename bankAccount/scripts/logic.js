@@ -39,3 +39,20 @@ class BankAccount {
     }
 
 }
+
+
+// Sample Example for Testing
+
+const acc1 = new BankAccount("John", 500);
+const acc2 = new BankAccount("Sara", 300); 
+console.log(acc1.transferTo(acc2, 200)); 
+console.log(acc1.getSummary()); // John's balance is $300 
+console.log(acc2.getSummary()); // Sara's balance is $500 
+console.log(acc1.printHistory()); // Shows full history
+
+
+acc1.deposit(600);
+acc1.withdraw(200);
+console.log(acc1.printHistory()); // Shows full history
+console.log(acc1.getSummary()); // John's balance is $600 
+console.log(acc2.printHistory()); // Shows full history
