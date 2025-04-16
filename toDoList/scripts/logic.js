@@ -10,6 +10,8 @@ function AddToList(){
 
     createLI.appendChild(addTask);
 
-    
+    document.getElementById("task-list").appendChild(createLI);
+
+    document.getElementById("task-input").value = ""
 
 }
